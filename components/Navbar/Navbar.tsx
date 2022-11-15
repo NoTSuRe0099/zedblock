@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import phoneIcon from '../../assets/img/phoneImg.png';
 import { motion } from 'framer-motion';
 import { useIsMedium, useMediaQuery } from '../../hooks/MediaQuery';
@@ -13,7 +13,6 @@ const Navbar = () => {
   const router = useRouter();
   const [isNavbarActive, setIsNavbarActive] = useState<boolean>(false);
   const [isBackgroundActive, setIsBackgroundActive] = useState<boolean>(false);
-  const Window = window;
 
   const changeBackgroundColor = () => {
     if (window?.scrollY >= 60) {
@@ -23,7 +22,9 @@ const Navbar = () => {
     }
   };
 
-  Window?.addEventListener('scroll', changeBackgroundColor);
+  useEffect(() => {
+    window?.addEventListener('scroll', changeBackgroundColor);
+  }, []);
 
   const navbarLinksVariant = isMedium
     ? {
