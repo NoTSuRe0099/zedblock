@@ -1,16 +1,15 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import phoneIcon from '../../assets/img/phoneImg.png';
 import { motion } from 'framer-motion';
-import { useIsMedium, useMediaQuery } from '../../hooks/MediaQuery';
+import { useIsMedium } from '../../hooks/MediaQuery';
 
 const Navbar = () => {
   const isMedium = !useIsMedium();
   const pathname = usePathname();
-  const router = useRouter();
   const [isNavbarActive, setIsNavbarActive] = useState<boolean>(false);
   const [isBackgroundActive, setIsBackgroundActive] = useState<boolean>(false);
 
@@ -92,9 +91,16 @@ const Navbar = () => {
       }`}
     >
       <div className="main_container h-full flex justify-between items-center relative ">
-        <h1 className="font-nunito font-semibold md:text-2xl text-base mr-[4vmax]">
-          ZedBlock
-        </h1>
+        <Link
+          href="/"
+          onClick={() => {
+            isMedium && setIsNavbarActive(false);
+          }}
+        >
+          <h1 className="font-nunito font-semibold hover:text-primary transition-all duration-300 md:text-2xl text-base mr-[4vmax]">
+            ZedBlock
+          </h1>
+        </Link>
         {
           <motion.div
             variants={navbarLinksVariant}
@@ -148,6 +154,9 @@ const Navbar = () => {
             <Link
               className={`md:font-light hover:text-primary transition-all duration-300 md:w-auto md:mx-0 font-medium main_container`}
               href="/howWeWork"
+              onClick={() => {
+                isMedium && setIsNavbarActive(false);
+              }}
             >
               <motion.span
                 className={`${pathname === '/howWeWork' && 'activeLink'} block`}

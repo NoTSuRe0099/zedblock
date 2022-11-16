@@ -161,8 +161,12 @@ const Home = () => {
                   // src="https://images.unsplash.com/photo-1633533452148-a9657d2c9a5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80"
                   alt="img"
                 />
-                <h1 className="text-[#D1E8E2] font-nunito font-medium md:text-2xl text-base md:mx-10 my-2">
-                  <span className="text-[#898C8C] md:hidden block">
+                <h1
+                  className={`text-[#D1E8E2] font-nunito font-medium md:text-2xl text-base flex md:w-1/2 my-2 ${
+                    (i + 1) % 2 !== 0 && 'md:mx-10'
+                  } `}
+                >
+                  <span className="text-[#898C8C] md:hidden block mr-2">
                     0{i + 1}
                   </span>{' '}
                   {item?.text}

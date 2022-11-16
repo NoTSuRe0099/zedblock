@@ -146,7 +146,7 @@ const Hero = () => {
         <div className="bg-gray-600 w-[1px] h-full absolute left-5 bottom-0 md:block hidden">
           <span
             style={{
-              height: `${(curruntIndex + 1) * 33}%`,
+              height: `${(curruntIndex + 1) * (100 / HeroData?.length)}%`,
             }}
             className={`w-[1px] bg-primary block  transition-all duration-700 relative`}
           >
