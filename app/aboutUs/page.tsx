@@ -106,7 +106,7 @@ const page = () => {
             />
           </div>
           <div className="md:w-full w-[90%] md:mx-0 mx-auto md:my-0 mt-10 flex flex-col gap-[1.5vmax] ">
-            {itemList.map((item: IitemList, i: number) => {
+            {itemList?.map((item: IitemList, i: number) => {
               return (
                 <div
                   key={i + item?.num}

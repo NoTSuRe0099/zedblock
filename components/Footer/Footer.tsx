@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 import SectionBreaker from '../SectionBreaker/SectionBreaker';
+import zedBlockLogo from '../../assets/img/Zedblock.png';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -110,7 +112,7 @@ const Footer = () => {
                   Design
                 </Link>
                 <Link
-                  href="/"
+                  href="/hireADeveloper"
                   className="font-normal md:text-[17px] text-[14px] mb-3"
                 >
                   Hire A Developer
@@ -167,9 +169,11 @@ const Footer = () => {
 
       <div className="md:h-[70px] h-8 w-full border-t border-b border-secondary mt-9">
         <div className="flex items-center justify-between main_container h-full">
-          <h1 className="font-nunito font-semibold md:text-2xl text-[12px]">
-            ZedBlock
-          </h1>
+          <Image
+            className="md:w-28 w-20 mt-2"
+            src={zedBlockLogo}
+            alt="zedblock"
+          />
           <h4 className="font-nunito font-normal md:text-sm text-[8px] text-[#E6E6E6]">
             © Copyright 2022.
           </h4>

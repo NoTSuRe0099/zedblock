@@ -8,9 +8,7 @@ const page = () => {
     <div className="">
       <div className="h-screen relative overflow-hidden">
         <div
-          // style={{ transform: `translate(-${curruntIndex * 100}%)` }}
-          className={`bg-gray-800 w-full h-full flex transform 
-transition-all duration-700`}
+          className={`bg-gray-800 w-full h-full flex transform transition-all duration-700`}
         >
           <div className="w-full h-full flex-shrink-0 relative ">
             <Image

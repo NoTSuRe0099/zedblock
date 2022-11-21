@@ -6,22 +6,22 @@ import React, { useEffect, useState } from 'react';
 import phoneIcon from '../../assets/img/phoneImg.png';
 import { motion } from 'framer-motion';
 import { useIsMedium } from '../../hooks/MediaQuery';
+import zedBlockLogo from '../../assets/img/Zedblock.png';
 
 const Navbar = () => {
-  const isMedium = !useIsMedium();
+  const isMedium: boolean = !useIsMedium();
   const pathname = usePathname();
   const [isNavbarActive, setIsNavbarActive] = useState<boolean>(false);
   const [isBackgroundActive, setIsBackgroundActive] = useState<boolean>(false);
 
-  const changeBackgroundColor = () => {
-    if (window?.scrollY >= 60) {
-      setIsBackgroundActive(true);
-    } else {
-      setIsBackgroundActive(false);
-    }
-  };
-
   useEffect(() => {
+    const changeBackgroundColor = () => {
+      if (window?.scrollY >= 60) {
+        setIsBackgroundActive(true);
+      } else {
+        setIsBackgroundActive(false);
+      }
+    };
     window?.addEventListener('scroll', changeBackgroundColor);
   }, []);
 
@@ -97,9 +97,11 @@ const Navbar = () => {
             isMedium && setIsNavbarActive(false);
           }}
         >
-          <h1 className="font-nunito font-semibold hover:text-primary transition-all duration-300 md:text-2xl text-base mr-[4vmax]">
-            ZedBlock
-          </h1>
+          <Image
+            className="md:w-28 w-20 mt-1"
+            src={zedBlockLogo}
+            alt="zedblock"
+          />
         </Link>
         {
           <motion.div
@@ -174,6 +176,9 @@ const Navbar = () => {
             <Link
               className={`md:font-light hover:text-primary transition-all duration-300 md:w-auto md:mx-0 font-medium main_container `}
               href="/ourWork"
+              onClick={() => {
+                isMedium && setIsNavbarActive(false);
+              }}
             >
               <motion.span
                 className={`${pathname === '/ourWork' && 'activeLink'} block`}
@@ -191,6 +196,9 @@ const Navbar = () => {
             <Link
               className={`md:font-light hover:text-primary transition-all duration-300 md:w-auto md:mx-0 font-medium main_container `}
               href="/contactUs"
+              onClick={() => {
+                isMedium && setIsNavbarActive(false);
+              }}
             >
               <motion.span
                 className={`${pathname === '/contactUs' && 'activeLink'} block`}
@@ -208,6 +216,9 @@ const Navbar = () => {
             <Link
               className={`md:font-light hover:text-primary transition-all duration-300 md:w-auto md:mx-0 font-medium main_container`}
               href="/aboutUs"
+              onClick={() => {
+                isMedium && setIsNavbarActive(false);
+              }}
             >
               <motion.span
                 className={`${pathname === '/aboutUs' && 'activeLink'} block`}
@@ -224,6 +235,9 @@ const Navbar = () => {
             </Link>
             <span className="bg-gray-400 md:h-[30px] md:w-[1px] md:mx-0 main_container h-[1px]  block" />
             <Link
+              onClick={() => {
+                isMedium && setIsNavbarActive(false);
+              }}
               href="tel:555-666-7777"
               className="font-light flex items-center gap-2 border  border-gray-400 px-2 py-1 rounded w-max md:mx-0 mx-auto"
             >
