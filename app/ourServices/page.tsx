@@ -14,33 +14,39 @@ interface IourServicesData {
 const ourServicesData: IourServicesData[] = [
   {
     img: 'https://images.unsplash.com/photo-1633533452148-a9657d2c9a5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80',
-    title: 'Branding',
+    title: 'Brand development',
     paragraph:
-      'Branding design describes how a brand chooses to visually represent their brand identity to the public. When talking about branding design, it typically refers to key brand elements such as the logo, color scheme, typography, and other design components that makes a brand stand out from competitors.',
+      'A brand is like an individual- meant to be unique. And what better way to convey your uniqueness than honest storytelling? Zedblock helps brands express their story by our multidisciplinary skill sets across brand strategy, design and quality content writing.',
   },
   {
     img: 'https://images.unsplash.com/photo-1602576666092-bf6447a729fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',
-    title: 'UI/UX Design',
+    title: 'Strategy and solution',
     paragraph:
-      'UX design focuses on the interaction that a human user has with everyday products and services. The goal of UX design is to make using these products and services, both digital or physical, easy, logical, and fun.UI (User Interface) design is the user-centered approach to designing the aesthetics of a digital product',
+      "Initially we understand the requirements and expectations of our clients for a particular project. Then it's time to put your vision into action with our expertise in strategizing. Every brand is unique and so are a brand's problems. We understand this and with industry experts deliver curated solutions that help your brand bloom.",
   },
   {
     img: ourServices3,
-    title: 'Website Development',
+    title: 'Market and competitor analysis',
     paragraph:
-      'Web Dev refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. The basic tools involved in web development are programming languages called HTML (Hypertext Markup Language), CSS (Cascading Style Sheets), and JavaScript.',
+      'Research is at the core of establishing a solid strategy for brand and communication. We dig a little deeper to understand our clients, the marketplace , the competitors  and pull together a market research report.',
   },
   {
     img: ourServices4,
-    title: 'Data Analysis',
+    title: 'Customer acquisition and conversion',
     paragraph:
-      'Data analysis is a process of inspecting, cleansing, transforming, and modelling data with the goal of discovering useful information, informing conclusions, and supporting decision-making. It  is used in different business, science, and social science domains.',
+      '  A business needs an effective sales funnel for lead generation. We know just how important a sales funnel is for any business, thus we deliver lead acquisition and  conversion strategies that work best for your business.Our plan of action includes understanding the end goal for your business and accordingly aligning lead generation campaign involving digital sales and ROI  measurement.',
   },
   {
     img: ourServices5,
-    title: 'AI & Machine Learning',
+    title: 'Data analytics',
     paragraph:
-      'Artificial intelligence generally refers to processes and algorithms that are able to simulate human intelligence, including mimicking cognitive functions such as perception, learning and problem solving. Machine learning and deep learning (DL) are subsets of AI.',
+      'At Zedblock our team of data scientists digs deep into the digital data collected from websites, social media, etc. Our team believes that simplifying complex measurements drives a digital marketing strategy. The goal is to understand customer behaviour for better acquisition techniques. Our team helps brands merge performance analytics and marketing data to obtain ROI driven results, adapt strategy and overall helps them better compete in the market.',
+  },
+  {
+    img: ourServices5,
+    title: 'Technical support',
+    paragraph:
+      'The world is going digital thus brands need a solid foundation for establishing themselves digitally. This is brought to action by the technical support at Zedblock. Our tech team provides complete tech support including website development, SEO, SEM, SMO and SMM.The team of tech experts at Zedblock design websites that are responsive, SEO compliant and most importantly align with your brand guidelines.SEO is a crucial aspect of any digital marketing strategy.A successful SEO strategy requires solid backend support which is given by our tech team. Email marketing is one of the most important parts of a digital marketing campaign.Smooth running and testing of email marketing campaigns is ensured by our tech team',
   },
 ];
 const OurServices = () => {

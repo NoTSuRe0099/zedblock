@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image';
 import React from 'react';
 import beautifulWebsite from '../../assets/img/beautifulWebsite.jpg';
@@ -82,7 +83,6 @@ const page = () => {
           </div>
         </div>
       </div>
-
       <section className="md:mb-[60px] mb-[30px]">
         <div className="font-nunito font-medium text-[3vmax] tracking-widest  w-full md:my-10 my-5 main_container">
           <div className="flex items-center gap-2 ">
@@ -124,35 +124,148 @@ const page = () => {
           </div>
         </div>
       </section>
-
       <section className="main_container md:mb-16 mb-8">
         <div className="flex items-center gap-2 mb-5">
           <span className="block w-[10%] h-[1px] bg-gray-600"></span>
-          <h1 className="w-max font-nunito font-medium md:text-[35px] text-2xl text-primary">
-            Our Services
+          <h1 className="w-max font-nunito font-medium md:text-[30px] text-2xl text-primary">
+            About Us
+          </h1>
+        </div>
+        <div className="w-full md:px-[10%] flex flex-col gap-5 md:text-[35px] text-2xl">
+          <p>
+            Established with a vision of providing only the best services to our
+            clients, drives Zedblock as a consulting agency to success. Sure
+            there
+          </p>
+          <p>
+            are 1000s of consulting agencies but what makes us different is that
+            :
+          </p>
+        </div>
+      </section>
+
+      <section className="main_container md:mb-10 mb-5">
+        <div className="flex items-center gap-2 mb-5">
+          <span className="block w-[10%] h-[1px] bg-gray-600"></span>
+          <h1 className="w-max font-nunito font-medium md:text-[25px] text-xl text-[#BFD3CE]">
+            1. You talk , we listen
           </h1>
         </div>
         <div className="w-full md:px-[10%] flex flex-col gap-5">
-          <p className="md:py-6 py-3 font-openSans font-normal md:text-[15px] text-sm text-center text-[#C3C3C3]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna
-            scelerisque cursus aliquam pellentesque porta ornare consectetur
-            etiam ultrices. Sed luctus mauris eu a tellus tortor non egestas
-            diam. Tristique nunc viverra turpis id nibh et sit. Sed sit praesent
-            volutpat cras lorem turpis ut sit enim. Eget nulla purus, sit in sed
-            enim augue risus malesuada.
+          <p className="md:py-6 py-3 font-openSans font-normal md:text-[15px] text-sm  text-[#C3C3C3]">
+            You know your business best and we understand that. As a consulting
+            agency , Zedblock focuses on understanding a client's business goals
+            . Then we proceed further with a plan of action involving creative
+            solutions to help achieve your goals.
           </p>
-          <p className="py-6 font-openSans font-normal md:text-[15px] text-sm text-center text-[#C3C3C3]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget mattis
-            convallis aenean viverra at viverra. Gravida augue amet pulvinar
-            sed. Blandit nibh imperdiet purus nunc adipiscing. Eu a ultricies
-            sem dignissim sit aliquam vivamus molestie volutpat. Enim tincidunt
-            eu bibendum ut. Eleifend tristique amet amet adipiscing et at
-            aliquam velit. Hendrerit ultricies diam sit placerat pellentesque
-            vitae. Feugiat blandit viverra feugiat pulvinar. Vel porttitor at
-            sed gravida morbi ullamcorper in senectus proin. Iaculis dolor
-            blandit amet blandit nisi in maecenas. Lorem cursus etiam maecenas
-            egestas lobortis fermentum, tincidunt posuere. Tristique nisl non
-            vel cursus ornare. A non a purus nunc habitasse ultricies.
+        </div>
+      </section>
+
+      <section className="main_container md:mb-10 mb-5">
+        <div className="flex items-center gap-2 mb-5">
+          <span className="block w-[10%] h-[1px] bg-gray-600"></span>
+          <h1 className="w-max font-nunito font-medium md:text-[25px] text-xl text-[#BFD3CE]">
+            2. Realistic deadlines
+          </h1>
+        </div>
+        <div className="w-full md:px-[10%] flex flex-col gap-5">
+          <p className="md:py-6 py-3 font-openSans font-normal md:text-[15px] text-sm  text-[#C3C3C3]">
+            We understand time is money in business and we value your time. Our
+            team of experts sets realistic deadlines and delivers on time.
+          </p>
+        </div>
+      </section>
+
+      <section className="main_container md:mb-10 mb-5">
+        <div className="flex items-center gap-2 mb-5">
+          <span className="block w-[10%] h-[1px] bg-gray-600"></span>
+          <h1 className="w-max font-nunito font-medium md:text-[25px] text-xl text-[#BFD3CE]">
+            3. Transparency is key
+          </h1>
+        </div>
+        <div className="w-full md:px-[10%] flex flex-col gap-5">
+          <p className="md:py-6 py-3 font-openSans font-normal md:text-[15px] text-sm  text-[#C3C3C3]">
+            We value integrity and believe in doing business with utmost
+            transparency and honesty with our clients. We never sell to you what
+            your business does not need , which aligns with our motto of doing
+            the best for our customers.
+          </p>
+        </div>
+      </section>
+
+      <section className="main_container md:mb-10 mb-5">
+        <div className="flex items-center gap-2 mb-5">
+          <span className="block w-[10%] h-[1px] bg-gray-600"></span>
+          <h1 className="w-max font-nunito font-medium md:text-[25px] text-xl text-[#BFD3CE]">
+            4. Holistic marketing approach
+          </h1>
+        </div>
+        <div className="w-full md:px-[10%] flex flex-col gap-5">
+          <p className="md:py-6 py-3 font-openSans font-normal md:text-[15px] text-sm  text-[#C3C3C3]">
+            Too many cooks spoil the broth and the same is true for any
+            business. Too much outsourcing is a tedious task which requires
+            constant communication . We understand this and thus offer you a
+            holistic marketing approach including all internet marketing
+            services like SEO , social media services , PPC management , email
+            marketing , content marketing , web marketing .
+          </p>
+
+          <p className="font-openSans font-normal md:text-[15px] text-sm text-[#C3C3C3]">
+            What started off as a one man company has bloomed into a top
+            consulting agency . Zedblock now brings to you uniquely curated
+            solutions that are offered by a close-knit team of experts from
+            every segment of digital marketing & data analytics. Your growth
+            marks our success and we plan to grow together.
+          </p>
+
+          <p className="font-openSans font-normal md:text-[15px] text-sm text-[#C3C3C3]">
+            Sold already ? Then you're just a click from getting started on your
+            project!
+          </p>
+        </div>
+      </section>
+
+      <section className="main_container md:mb-10 mb-5">
+        <div className="flex items-center gap-2 mb-5">
+          <span className="block w-[10%] h-[1px] bg-gray-600"></span>
+          <h1 className="w-max font-nunito font-medium md:text-[25px] text-xl text-[#BFD3CE]">
+            5. Our Vision
+          </h1>
+        </div>
+        <div className="w-full md:px-[10%] flex flex-col">
+          <h1>Our team at the Zedblock is founded on 3 things;</h1>
+          <br />
+
+          <h1 className="underline text-[#C3C3C3] font-semibold">Integrity</h1>
+          <h1 className="underline text-[#C3C3C3] font-semibold">Innovation</h1>
+          <h1 className="underline text-[#C3C3C3] font-semibold">Dedication</h1>
+          <br />
+          <p className="font-openSans font-normal md:text-[15px] text-sm text-[#C3C3C3]">
+            We value our clients and strive hard to exceed client expectations.
+            We treat your business as if it's our own and work to build a strong
+            relationship with you. Our team has SEO consultants and members to
+            assist your business in PPC management, Email marketing & social
+            media marketing, data analytics, business analytics. A team that
+            works relentlessly to accomplish business goals is what makes
+            Zedblock, the perfect small business consulting agency.
+          </p>
+        </div>
+      </section>
+
+      <section className="main_container md:mb-10 mb-5">
+        <div className="flex items-center gap-2 mb-5">
+          <span className="block w-[10%] h-[1px] bg-gray-600"></span>
+          <h1 className="w-max font-nunito font-medium md:text-[25px] text-xl text-[#BFD3CE]">
+            6. Our Mission
+          </h1>
+        </div>
+        <div className="w-full md:px-[10%] flex flex-col gap-5">
+          <p className="md:py-6 py-3 font-openSans font-normal md:text-[15px] text-sm  text-[#C3C3C3]">
+            Zedblock creates a streamlined process integrating modern day
+            technology to aid our clients and fulfill their business goals. We
+            make a plan of action considering the big picture and delivering
+            high quality solutions . We are ROI centric and provide personalized
+            solutions to meet your requirements .
           </p>
         </div>
       </section>
